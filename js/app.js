@@ -12,8 +12,8 @@ const createUserElement = (user) => {
     const userDiv = document.createElement("div");
     userDiv.classList.add("userInfo");
     userDiv.innerHTML = `<div>name: ${user.name}</div>
-                         <div>email: ${user.email}</div>
-                         <div>phone: ${user.phone}</div>`;
+                         <span>email: ${user.email}</span>
+                         <span>phone: ${user.phone}</span>`;
     return userDiv;
 };
 

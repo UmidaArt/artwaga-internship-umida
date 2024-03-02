@@ -15,15 +15,28 @@ body {
     height: 50px;
 }
 .displayUsers {
-    padding: 20px 0 20px;
+    padding: 20px 0 80px;
+}
+.usersList {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .box {
     margin-right: 10px;
 }
 .displayUsers h2 {
     font-size: calc(18px + 12 * (100vw /1600));
+}
+.userInfo {
+    max-width: 350px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 10px;
+}
+.userInfo span {
+    display: block;
+    font-size: calc(14px + 4 * (100vw /1600));
 }
 #btnUpdate,
 #sortEmail,
@@ -40,6 +53,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
 }
+
 #btnUpdate:before,
 #sortEmail:before,
 #filterButton:before {
@@ -58,25 +72,21 @@ body {
      transition: opacity .3s ease-in-out;
      border-radius: 5px;
 }
-
 #btnUpdate:active,
 #sortEmail:active,
 #filterButton:active {
     color: #ffffff
 }
-
 #btnUpdate:active:after,
 #sortEmail:active:after,
 #filterButton:active:after {
     background: transparent;
 }
-
-#btnUpdate:hover:before,
-#sortEmail:hover:before,
-#filterButton:hover:before {
+#btnUpdate:before,
+#sortEmail:before,
+#filterButton:before {
     opacity: 1;
 }
-
 #btnUpdate:after,
 #sortEmail:after,
 #filterButton:after {
@@ -95,6 +105,7 @@ body {
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
 #btnUpdate:hover,
 #sortEmail:hover,
 #filterButton:hover {
